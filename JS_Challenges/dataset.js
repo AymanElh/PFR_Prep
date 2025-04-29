@@ -748,6 +748,21 @@ export const employees = [
     projects: ["Project Epsilon"],
     isActive: false,
     languages: ["French", "English", "Italian"]
+},
+{
+    id: 50,
+    firstName: "Ayman",
+    lastName: "Leroy",
+    age: 31,
+    department: "Marketing",
+    position: "Responsable marketing digital",
+    salary: 52000,
+    skills: ["SEO", "Google Analytics", "Content Marketing", "Social Media"],
+    joinDate: "2021-01-05",
+    email: "sophie.leroy@company.com",
+    projects: ["Project Zeta"],
+    isActive: false,
+    languages: ["French", "English", "Italian"]
 }
 ];
 
