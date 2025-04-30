@@ -1,14 +1,14 @@
 import {employees} from '../dataset.js';
 
-function getSkillCount(arr, skill) {
-    let skillCount = 0;
-    for(let i = 0; i < arr.length; i++) {
-        if(arr[i].skills.includes(skill)) {
-            skillCount++;
-        }
-    }
-    return skillCount;
-}
+// function getSkillCount(arr, skill) {
+//     let skillCount = 0;
+//     for(let i = 0; i < arr.length; i++) {
+//         if(arr[i].skills.includes(skill)) {
+//             skillCount++;
+//         }
+//     }
+//     return skillCount;
+// }
 
 function getSkillsCountObj(arr) {
     let skillsCount = {};

@@ -1,8 +1,8 @@
 export const employees = [
 {
     id: 1,
-    firstName: "Jean",
-    lastName: "Dupont",
+    firstName: "jean",
+    lastName: "dupont",
     age: 32,
     department: "Développement",
     position: "Développeur Fullstack",
