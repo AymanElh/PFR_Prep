@@ -1,61 +1,71 @@
+I've examined your Fitness & Nutrition Tracking System schema, and I'll create a series of SQL practice challenges tailored to your database. These challenges will progressively increase in difficulty and cover all the SQL concepts you mentioned.
+
 # SQL Practice Challenges for Fitness & Nutrition Tracking System
 
 ## Beginner Challenges
 
-### B1: Basic Selects
-Find all users who are currently active in the system.
+### Challenge 1: Basic SELECT queries
+Write a query to retrieve all users with their name, email, weight, and height.
 
-### B2: Simple Joins
-List all food items along with their category names.
+### Challenge 2: WHERE clause filtering
+Find all food items that belong to a specific category (e.g., category_id = 1).
 
-### B3: Filtering with Multiple Conditions
-Find all exercises that are for beginners and target the core muscle group.
+### Challenge 3: ORDER BY clause
+List all exercises ordered by difficulty level (beginner first, then intermediate, then advanced).
 
-### B4: Simple Aggregation
-Count how many food items exist in each food category.
+### Challenge 4: LIMIT clause
+Retrieve the 5 most recently created nutrition plans.
 
-### B5: Basic Data Modification
-Update the difficulty level of all exercises created by user ID 4 to 'intermediate'.
+### Challenge 5: Simple aggregation
+Count how many different food items are in the database.
 
 ## Intermediate Challenges
 
-### I1: Complex Joins
-Find all users who have created both exercise plans and nutrition plans, and show the count of each.
+### Challenge 6: Inner JOIN operation
+List all meals along with their food items. Include meal name, food item name, and quantity.
 
-### I2: Subqueries
-Find all meals that contain food items with a protein content greater than 20g per 100g.
+### Challenge 7: Multiple JOINs
+Find all users who have created exercise plans, showing the user name, plan name, and plan level.
 
-### I3: Advanced Aggregations
-Calculate the average calorie content of each meal type (breakfast, lunch, dinner, snack).
+### Challenge 8: GROUP BY with aggregation
+Calculate the total number of food items in each food category, and order the results by count in descending order.
 
-### I4: Date Functions
-Find all exercise plans created in the last 30 days and their creator names.
+### Challenge 9: HAVING clause
+Find all meals that have more than 3 food items.
 
-### I5: Window Functions
-Rank food items within each category based on their protein content (highest to lowest).
-
-### I6: JSON/JSONB Data
-Extract and analyze the micronutrient content from food items, specifically finding items rich in vitamin C.
+### Challenge 10: Subquery in WHERE clause
+List all users who have created at least one exercise with "advanced" difficulty.
 
 ## Advanced Challenges
 
-### A1: Complex Query Optimization
-Create an efficient query to find users who have both created high-protein meals (avg protein > 25g) and have completed advanced exercise plans.
+### Challenge 11: Complex JOINs with multiple tables
+List all nutrition plans along with the total number of unique food items across all days and meals in each plan.
 
-### A2: Recursive Queries
-Implement a query that shows the complete nutritional breakdown of a 7-day nutrition plan (sum all nutrients from all food items across all days).
+### Challenge 12: LEFT JOIN
+Find all users and their exercise plans, including users who don't have any exercise plans.
 
-### A3: Advanced Analytics
-Calculate the calorie deficit/surplus for each user based on their recorded exercise plans and nutrition plans over a month period.
+### Challenge 13: CROSS JOIN
+Create a report that shows all possible combinations of food categories and exercise difficulty levels.
 
-### A4: Dynamic Pivoting
-Create a dynamic pivot table showing exercise frequency by muscle group and difficulty level.
+### Challenge 14: SELF JOIN
+Find pairs of users who have the same weight (but are different users).
 
-### A5: Custom Functions
-Write a SQL function that recommends food items to complement a user's existing meal based on nutritional gaps.
+### Challenge 15: RIGHT JOIN
+List all exercises and the exercise plan items they appear in, including exercises that aren't used in any plan.
 
-### A6: Transaction Management
-Create a transaction that safely transfers all exercise plans from one user to another when merging accounts.
+### Challenge 16: UNION operation
+Create a combined list of all food item names and exercise names, indicating which type each name belongs to.
 
-### A7: Temporal Data Analysis
-Analyze user weight changes over time in relation to their adherence to nutrition and exercise plans.
+### Challenge 17: INTERSECT operation
+Find all users who have both a nutrition plan and an exercise plan.
+
+### Challenge 18: Common Table Expressions (CTE)
+Use a CTE to find the users who have created the most food items, then list those users and the food items they've created.
+
+### Challenge 19: Window functions
+Rank meals based on the number of food items they contain, and display the rank alongside the meal details.
+
+### Challenge 20: Complex subqueries and joins
+Find the users who have the most complete fitness profiles by creating a query that scores users based on whether they have: exercise plans, nutrition plans, weight/height data, and biographical information.
+
+Would you like me to provide detailed solutions for any of these challenges, or would you prefer to tackle them yourself first? I can also create additional challenges focusing on specific SQL concepts if you're interested.
